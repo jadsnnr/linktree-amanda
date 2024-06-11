@@ -34,39 +34,58 @@
       list-style-type: none;
       color: var(--txt__color);
     }
-    :root{
-      --txt__color:rgb(95, 45, 12);
+
+    :root {
+      --txt__color: rgb(95, 45, 12);
       --bg__txtcolor: rgba(255, 190, 167, 0.709);
-      --bg__txtcolor_hover:rgb(255, 190, 167);
+      --bg__txtcolor_hover: rgb(255, 190, 167);
     }
 
     .container {
       display: flex;
+      flex-direction: column;
       width: 80vw;
       height: 99vh;
       border: 1px solid black;
       line-height: 2rem;
       align-items: center;
-      }
+      padding: 0;
+    }
+
+    main {
+      position: relative;
+      width: 80vw;
+      height: 85vh;
+      margin-top: 5em;
+      background-color: rgb(222, 222, 222);
+    }
 
     .list__items {
       padding: 10px;
     }
 
-    h1{
-      font-family: "Roboto", sans-serif;
+    h1 {
       font-weight: 100;
-      margin-bottom: 1rem;
-      
+      margin-top: 10rem;
+    }
+
+    .greetings__txt{
+      margin-top: 8rem;
     }
     h4 {
       font-family: "Indie Flower", cursive;
       font-weight: 100;
     }
 
-    img{
-      width: 25vw;
+    img {
+      position: absolute;
+      left: 11rem;
+      top: -50px;
+      width: 30vw;
+      height: 20vh;
       border-radius: 50%;
+      scale: 1.5rem;
+      border: 0.6rem solid rgb(222,222, 222);
     }
 
     ul {
@@ -74,7 +93,6 @@
     }
 
     a {
-      font-family: "Indie Flower", cursive;
       text-decoration: none;
       color: var(--txt__color);
       background: var(--bg__txtcolor);
@@ -87,16 +105,15 @@
     a:hover {
       background: var(--bg__txtcolor_hover);
       transform: scale(1.1);
-      transition: 0.3s;
+      transition: 0.2s;
     }
   </style>
   <body>
     <div class="container">
+      <h4 class="greetings__txt">Seja bem vindo!</h4>
       <main>
-        <h4>Seja bem vindo!</h4>
-        <img src="WhatsApp Image 2024-06-11 at 12.21.55.jpeg" alt="">
-        <h4>meu nome é</h4>
-        <h1>Amanda Faria</h1>
+        <img src="pexels-leah-newhouse-50725-1449667.jpg" alt="" />
+        <h1>Eu sou Amanda</h1>
         <h4>Conheça um pouco mais do meu trabalho</h4>
         <div class="content">
           <ul>
