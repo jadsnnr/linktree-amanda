@@ -46,18 +46,20 @@
       flex-direction: column;
       width: 80vw;
       height: 99vh;
-      border: 1px solid black;
+      border-radius: 15px;
       line-height: 2rem;
       align-items: center;
       padding: 0;
+      background-image: url(img/pexels-alan-ferreira-894793-3432239.jpg);
     }
 
     main {
       position: relative;
+      margin-top: 5rem;
+      border-radius: 40% 15px;
       width: 80vw;
-      height: 85vh;
-      margin-top: 5em;
-      background-color: rgb(222, 222, 222);
+      height: 90vh;
+      background-color: rgba(190, 212, 190, 0.712);
     }
 
     .list__items {
@@ -66,26 +68,34 @@
 
     h1 {
       font-weight: 100;
-      margin-top: 10rem;
+      margin-top: 8rem;
     }
 
-    .greetings__txt{
-      margin-top: 8rem;
+    .greetings__txt {
+      margin-top: 3rem;
+      font-size: 2rem;
+      color: rgb(185, 228, 185);
     }
     h4 {
       font-family: "Indie Flower", cursive;
       font-weight: 100;
+      margin-top: 1rem;
     }
 
     img {
       position: absolute;
-      left: 11rem;
+      left: 8rem;
       top: -50px;
       width: 30vw;
       height: 20vh;
       border-radius: 50%;
       scale: 1.5rem;
-      border: 0.6rem solid rgb(222,222, 222);
+      border: 0.6rem solid rgba(190, 212, 190, 0.712);
+    }
+    img:hover {
+      transform: scale(1.1);
+      transition: 0.4s;
+      background-color: rgb(214, 219, 214);
     }
 
     ul {
@@ -95,7 +105,6 @@
     a {
       text-decoration: none;
       color: var(--txt__color);
-      background: var(--bg__txtcolor);
       border: 1px solid rgba(128, 128, 128, 0.282);
       box-shadow: 3px 2px 8px rgba(159, 159, 159, 0.503);
       border-radius: 15px;
@@ -103,16 +112,15 @@
       display: block;
     }
     a:hover {
-      background: var(--bg__txtcolor_hover);
-      transform: scale(1.1);
-      transition: 0.2s;
+      background: rgb(170, 170, 170);
+      transition: 0.6s;
     }
   </style>
   <body>
     <div class="container">
       <h4 class="greetings__txt">Seja bem vindo!</h4>
       <main>
-        <img src="pexels-leah-newhouse-50725-1449667.jpg" alt="" />
+        <img src="profile-img.jpeg" alt="" />
         <h1>Eu sou Amanda</h1>
         <h4>Conheça um pouco mais do meu trabalho</h4>
         <div class="content">
