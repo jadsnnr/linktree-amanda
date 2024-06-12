@@ -56,10 +56,10 @@
     main {
       position: relative;
       margin-top: 5rem;
-      border-radius: 40% 15px;
+      border-radius: 30% 0% 30% 0%;
       width: 80vw;
       height: 90vh;
-      background-color: rgba(190, 212, 190, 0.712);
+      background-color: rgba(255, 255, 255, 0.712);
     }
 
     .list__items {
@@ -76,6 +76,7 @@
       font-size: 2rem;
       color: rgb(185, 228, 185);
     }
+
     h4 {
       font-family: "Indie Flower", cursive;
       font-weight: 100;
@@ -84,18 +85,19 @@
 
     img {
       position: absolute;
-      left: 8rem;
+      left: 7rem;
       top: -50px;
       width: 30vw;
       height: 20vh;
       border-radius: 50%;
       scale: 1.5rem;
-      border: 0.6rem solid rgba(190, 212, 190, 0.712);
+      border: 0.6rem solid rgba(255, 255, 255, 0.195);
     }
+
     img:hover {
       transform: scale(1.1);
       transition: 0.4s;
-      background-color: rgb(214, 219, 214);
+      background-color: rgba(255, 255, 255, 0.351);
     }
 
     ul {
@@ -105,14 +107,20 @@
     a {
       text-decoration: none;
       color: var(--txt__color);
-      border: 1px solid rgba(128, 128, 128, 0.282);
-      box-shadow: 3px 2px 8px rgba(159, 159, 159, 0.503);
-      border-radius: 15px;
-      padding: 2.5px;
-      display: block;
     }
-    a:hover {
-      background: rgb(170, 170, 170);
+    .line__icons {
+      display: inline-flex;
+    }
+
+    .list__items {
+      box-shadow: 3px 2px 8px rgba(159, 159, 159, 0.503);
+      margin: 2.5px;
+      display: block;
+      border: 1px solid rgba(128, 128, 128, 0.264);
+      cursor: pointer;
+    }
+    .list__items:hover {
+      background: rgba(170, 170, 170, 0.454);
       transition: 0.6s;
     }
   </style>
@@ -124,6 +132,22 @@
         <h1>Eu sou Amanda</h1>
         <h4>Conheça um pouco mais do meu trabalho</h4>
         <div class="content">
+          <ul class="line__icons">
+            <li>
+              <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li><a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li><a href="#">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a></li>
+            <li><a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          </ul>
           <ul>
             <li class="list__items"><a href="#">Instagram</a></li>
             <li class="list__items"><a href="#">Facebook</a></li>
@@ -133,50 +157,13 @@
         </div>
       </main>
     </div>
-    <!--
-      <select name="estados" id="estd">
-        <option value="Estados">São Paulo</option>
-        <option value="Estados">Minas Gerais</option>
-        <option value="Estados">Espirito Santo</option>
-      </select>
-      <h4>Preencha os dados a seguir:</h4>
-      <form action="" method="get">
-        <label for="txt1">Login:</label>
-        <input type="text" name="txt1" id="txt1">
-        <label for="pass1">Senha:</label>
-        <input type="password" name="pass1" id="pass1">
-        <label for="sexm">Masculino</label>
-        <input type="radio" name="sex" id="sexm"style="cursor: pointer" ;>
-        <label for="sexf">Feminino</label>
-        <input type="radio" name="sex" id="sexf" style="cursor: pointer";>
-        <input type="submit" value="submit" style="cursor: pointer";>
-      
-        </form>
-    <img src="sobrenoix.png" alt="" />
-    
-    <table>
-      <tr>
-        <td>Código</td>
-        <td>Quantidade</td>
-        <td>Produto</td>
-        <td>Preço</td>
-        <td>Desconto</td>
-      </tr>
-      <tr>
-        <td>001</td>
-        <td>1</td>
-        <td>Notebook</td>
-        <td>3.800,00</td>
-        <td>10,00</td>
-      </tr>
-      <tr>
-        <td>002</td>
-        <td>1</td>
-        <td>Celular</td>
-        <td>2.800,00</td>
-        <td>15,00</td>
-      </tr>
-    </table>
-    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
