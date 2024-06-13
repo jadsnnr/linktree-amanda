@@ -25,6 +25,12 @@
      002 - https://www.dafont.com/welcome-5.font
      003 - https://alitdesign.net/product/billy-ohio-typeface/ <<Melhor<<
     */
+    
+    :root {
+      --txt__color: rgb(95, 45, 12);
+      --bg__txtcolor: rgba(255, 190, 167, 0.709);
+      --bg__txtcolor_hover: rgb(255, 190, 167);
+    }
 
     * {
       padding: 0;
@@ -35,11 +41,6 @@
       color: var(--txt__color);
     }
 
-    :root {
-      --txt__color: rgb(95, 45, 12);
-      --bg__txtcolor: rgba(255, 190, 167, 0.709);
-      --bg__txtcolor_hover: rgb(255, 190, 167);
-    }
 
     .container {
       display: flex;
@@ -59,7 +60,7 @@
       border-radius: 30% 0% 30% 0%;
       width: 80vw;
       height: 90vh;
-      background-color: rgba(255, 255, 255, 0.712);
+      background-color: rgba(255, 255, 255, 0.534);
     }
 
     .list__items {
@@ -91,7 +92,7 @@
       height: 20vh;
       border-radius: 50%;
       scale: 1.5rem;
-      border: 0.6rem solid rgba(255, 255, 255, 0.195);
+      border: 2px solid rgba(255, 255, 255, 0.466);
     }
 
     img:hover {
@@ -165,5 +166,16 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script>
+      let action = document.querySelectorAll(`.list__items`);
+      action[length].addEventListener("click", click_on);
+
+      function click_on() {
+        action[0].innerHTML = "funcionou!";
+        action[0].style.background = "green";
+      }
+
+    </script>
   </body>
 </html>
