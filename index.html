@@ -18,6 +18,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
   </head>
   <style>
     /*PRIMARY__FONTS:
@@ -79,7 +89,7 @@
       margin-top: 1rem;
     }
 
-    img {
+    #profile__img {
       position: absolute;
       left: 7rem;
       top: -50px;
@@ -90,7 +100,7 @@
       border: 2px solid rgba(255, 255, 255, 0.466);
     }
 
-    img:hover {
+    #profile__img:hover {
       transform: scale(1.1);
       transition: 0.4s;
       background-color: rgba(255, 255, 255, 0.351);
@@ -125,7 +135,7 @@
     }
 
     dialog {
-      width: 60vw;
+      width: 70vw;
       border: none;
       box-shadow: 1px 5px 10px black;
       border-radius: 5px;
@@ -144,23 +154,20 @@
       padding: 4px;
       border: none;
     }
-    .home__button:active{
+    .home__button:active {
       transform: scale(1.3);
-
     }
-    ion-icon{
-     
+    ion-icon {
     }
   </style>
   <body>
     <div class="container">
       <h4 class="greetings__txt">Seja bem vindo!</h4>
       <main>
-        <img src="img/profile-img.jpeg" alt="" />
+        <img src="img/profile-img.jpeg" alt="" id="profile__img" />
         <h1>Eu sou Amanda</h1>
         <h4>Conheça um pouco mais do meu trabalho</h4>
         <div class="content">
-          
           <ul>
             <li class="list__item"><a href="#">Quem sou eu?</a></li>
             <li class="list__item"><a href="#">Veja alguns projetos</a></li>
@@ -168,7 +175,7 @@
           </ul>
           <dialog class="modal">
             <a href="http://127.0.0.1:5500/index.html" class="home__button"
-              ><ion-icon name="home"></ion-icon
+              ><ion-icon name="arrow-undo"></ion-icon
             ></a>
             <h3>Quem sou Eu?</h3>
             <p>
@@ -179,41 +186,64 @@
           </dialog>
           <dialog class="carousel">
             <a href="http://127.0.0.1:5500/index.html" class="home__button"
-              ><ion-icon name="home"></ion-icon
+              ><ion-icon name="arrow-undo"></ion-icon
             ></a>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-              explicabo? Voluptatibus totam, doloremque minus adipisci tempore,
-              asperiores quia inventore hic odio assumenda, modi quibusdam
-              deleniti earum labore necessitatibus eum saepe.
-            </p>
+            <div class="swiffy-slider">
+              <ul class="slider-container">
+                <li>
+                  <img
+                    src="img/pexels-alan-ferreira-894793-3432239.jpg"
+                    style="max-width: 60vw; height: auto; margin-top: 50px"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/img-light.jpg"
+                    style="max-width: 60vw; height: auto; margin-top: 50px"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="img/pexels-doouglasma-18279011.jpg"
+                    style="max-width: 60vw; height: auto; margin-top: 50px"
+                  />
+                </li>
+              </ul>
+
+              <button type="button" class="slider-nav"></button>
+              <button type="button" class="slider-nav slider-nav-next"></button>
+
+              <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+              </div>
+            </div>
           </dialog>
-          <dialog class="location">
-            
-          </dialog>
+          <dialog class="location"></dialog>
         </div>
         <ul class="line__icon">
-            <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-          </ul>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
       </main>
     </div>
     <script
