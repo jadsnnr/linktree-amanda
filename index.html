@@ -25,7 +25,7 @@
      002 - https://www.dafont.com/welcome-5.font
      003 - https://alitdesign.net/product/billy-ohio-typeface/ <<Melhor<<
     */
-    
+
     :root {
       --txt__color: rgb(95, 45, 12);
       --bg__txtcolor: rgba(255, 190, 167, 0.709);
@@ -40,7 +40,6 @@
       list-style-type: none;
       color: var(--txt__color);
     }
-
 
     .container {
       display: flex;
@@ -61,10 +60,6 @@
       width: 80vw;
       height: 90vh;
       background-color: rgba(255, 255, 255, 0.534);
-    }
-
-    .list__items {
-      padding: 10px;
     }
 
     h1 {
@@ -115,14 +110,27 @@
 
     .list__items {
       box-shadow: 3px 2px 8px rgba(159, 159, 159, 0.503);
-      margin: 2.5px;
+      padding: 15px;
+      margin: 2em;
       display: block;
       border: 1px solid rgba(128, 128, 128, 0.264);
       cursor: pointer;
     }
+
     .list__items:hover {
       background: rgba(170, 170, 170, 0.454);
       transition: 0.6s;
+    }
+
+    .modal {
+      width: 60vw;
+      border: none;
+      box-shadow: 1px 5px 10px black;
+      border-radius: 5px;
+padding: 25px;    }
+
+    .modal::backdrop {
+      background-color: rgba(0, 0, 0, 0.734);
     }
   </style>
   <body>
@@ -139,22 +147,33 @@
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
-            <li><a href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-            <li><a href="#">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a></li>
-            <li><a href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
+            <li>
+              <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
           </ul>
           <ul>
-            <li class="list__items"><a href="#">Instagram</a></li>
+            <li class="list__items"><a href="#">Quem sou eu?</a></li>
             <li class="list__items"><a href="#">Facebook</a></li>
-            <li class="list__items"><a href="#">Tiktok</a></li>
-            <li class="list__items"><a href="#">Whatsapp</a></li>
           </ul>
+          <dialog class="modal">
+            <h5>Quem sou Eu?</h5>
+            Sou Amanda Faria, arquiteta paisagista por paixão e profissão.
+            Trabalho para criar espaços ao ar livre que unem beleza,
+            funcionalidade e harmonia com a natureza.
+            #ArquiteturaPaisagista #NaturezaNoDesign
+          </dialog>
         </div>
       </main>
     </div>
@@ -168,14 +187,14 @@
     ></script>
 
     <script>
-      let action = document.querySelectorAll(`.list__items`);
-      action[length].addEventListener("click", click_on);
+      const action = document.querySelectorAll(`.list__items`);
+      const modal = document.querySelector(".modal");
 
-      function click_on() {
-        action[0].innerHTML = "funcionou!";
-        action[0].style.background = "green";
+      action[0].addEventListener("click", clicar);
+
+      function clicar() {
+        modal.showModal();
       }
-
     </script>
   </body>
 </html>
