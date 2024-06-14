@@ -114,6 +114,7 @@
       text-decoration: none;
       color: var(--txt__color);
     }
+
     .line__icon {
       display: inline-flex;
       margin-top: 25px;
@@ -154,12 +155,12 @@
       padding: 4px;
       border: none;
     }
+
     .home__button:active {
       transform: scale(1.3);
     }
-    ion-icon {
-    }
   </style>
+
   <body>
     <div class="container">
       <h4 class="greetings__txt">Seja bem vindo!</h4>
@@ -209,7 +210,6 @@
                   />
                 </li>
               </ul>
-
               <button type="button" class="slider-nav"></button>
               <button type="button" class="slider-nav slider-nav-next"></button>
 
@@ -220,7 +220,16 @@
               </div>
             </div>
           </dialog>
-          <dialog class="location"></dialog>
+          <dialog class="location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d332.9286811731572!2d-40.6332688!3d-19.5357871!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb7a9e7537bc13f%3A0xbceb091b3cbafdfb!2sCasa%20%C3%82mago%20Arquitetura%20e%20Design!5e1!3m2!1spt-BR!2sbr!4v1718404863044!5m2!1spt-BR!2sbr"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </dialog>
         </div>
         <ul class="line__icon">
           <li>
@@ -259,6 +268,7 @@
       const actions = document.querySelectorAll(".list__item");
       const modals = document.querySelectorAll(".modal");
       const carousel = document.querySelector(".carousel");
+      const location_app = document.querySelector(".location");
 
       actions.forEach((action, index) => {
         action.addEventListener("click", () => clicar(index));
@@ -267,26 +277,12 @@
       function clicar(index) {
         if (index < modals.length) {
           modals[index].showModal();
-        } else {
+        } else if (index === modals.length && carousel) {
           carousel.showModal();
+        } else if (index === modals.length + 1 && location_app) {
+          location_app.showModal();
         }
       }
-
-      /* const action = document.querySelectorAll(".list__item");
-      const modal = document.querySelector(".modal");
-      const carousel = document.querySelector(".carousel");
-      action[0].addEventListener("click", clicar);
-      action[1].addEventListener("click", clicar);
-
-      
-      function clicar() {
-        if (event.target = modal) {
-          carousel.showModal();
-        } else {
-          modal.showModal();
-      }
-    }
-      */
     </script>
   </body>
 </html>
