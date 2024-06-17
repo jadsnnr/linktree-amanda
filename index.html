@@ -36,6 +36,9 @@
      003 - https://alitdesign.net/product/billy-ohio-typeface/ <<Melhor<<
     */
 
+    @media screen (min-width: 845px) {
+    }
+
     :root {
       --txt__color: #6c4f39;
       --bg__txtcolor: #b4b7bfc6;
@@ -59,7 +62,10 @@
       line-height: 2rem;
       align-items: center;
       padding: 0;
-      background-image: url(img/pexels-alan-ferreira-894793-3432239.jpg);
+      background: url(img/pexels-alan-ferreira-894793-3432239.jpg) no-repeat
+        center;
+      background-attachment: fixed;
+      background-size: cover;
     }
 
     main {
@@ -90,7 +96,7 @@
     #profile__img {
       position: absolute;
       left: 8rem;
-      top: -50px;
+      top: -4rem;
       width: 35vw;
       height: 20vh;
       border-radius: 50%;
@@ -112,16 +118,15 @@
       text-decoration: none;
       color: var(--txt__color);
     }
-
     .line__icon {
       display: inline-flex;
-      margin-top: 25px;
+      margin-top: 2rem;
       font-size: x-large;
     }
 
     .list__item {
       box-shadow: 3px 2px 8px rgba(159, 159, 159, 0.503);
-      padding: 15px;
+      padding: 0.8rem;
       margin-top: 2em;
       display: block;
       border: 1px solid rgba(128, 128, 128, 0.264);
@@ -173,7 +178,9 @@
             <li class="list__item"><a href="#">Onde me encontrar</a></li>
           </ul>
           <dialog class="modal">
-            <a href="https://jadsnnr.github.io/linktree-amanda/" class="home__button"
+            <a
+              href="https://jadsnnr.github.io/linktree-amanda/"
+              class="home__button"
               ><ion-icon name="arrow-undo"></ion-icon
             ></a>
             <h3>Quem sou Eu?</h3>
@@ -184,7 +191,9 @@
             </p>
           </dialog>
           <dialog class="carousel">
-            <a href="https://jadsnnr.github.io/linktree-amanda/" class="home__button"
+            <a
+              href="https://jadsnnr.github.io/linktree-amanda/"
+              class="home__button"
               ><ion-icon name="arrow-undo"></ion-icon
             ></a>
             <div class="swiffy-slider">
@@ -219,7 +228,9 @@
             </div>
           </dialog>
           <dialog class="location">
-            <a href="https://jadsnnr.github.io/linktree-amanda/" class="home__button"
+            <a
+              href="https://jadsnnr.github.io/linktree-amanda/"
+              class="home__button"
               ><ion-icon name="arrow-undo"></ion-icon
             ></a>
             <iframe
@@ -244,7 +255,10 @@
             </a>
           </li>
           <li>
-            <a href="https://api.whatsapp.com/send/?phone=5527999875777&text=Ol%C3%A1+Amanda+Faria!+Quero+saber+mais&type=phone_number&app_absent=0" target="_blank">
+            <a
+              href="https://api.whatsapp.com/send/?phone=5527999875777&text=Ol%C3%A1+Amanda+Faria!+Quero+saber+mais&type=phone_number&app_absent=0"
+              target="_blank"
+            >
               <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
