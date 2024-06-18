@@ -41,7 +41,7 @@
     font-weight: 100;
     margin-top: 9rem;
   }
-  
+
   h4 {
     font-weight: 100;
     margin-top: 1rem;
@@ -73,7 +73,6 @@
   }
 
   .list__item {
-    background-color: #;
     box-shadow: 3px 2px 8px rgba(159, 159, 159, 0.503);
     padding: 0.8rem;
     margin-top: 2em;
