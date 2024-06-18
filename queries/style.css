@@ -23,9 +23,9 @@
 
   #profile__img {
     flex-flow: row;
-    right: 8rem;
+    right: 9rem;
     bottom: 20rem;
-    top: -20rem;
+    top: -10rem;
   }
   .list__item {
     padding: 0.rem;
