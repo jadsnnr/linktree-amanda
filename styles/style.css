@@ -11,28 +11,29 @@
     text-align: center;
     list-style-type: none;
     color: var(--txt__color);
+    font-family: "Open Sans", sans-serif;;
   }
 
   .container {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    height: 100vh;
     line-height: 2rem;
     align-items: center;
     padding: 0;
-    background: url(img/pexels-alan-ferreira-894793-3432239.jpg) no-repeat center;
+    background: url(img/pexels-doouglasma-18279011.jpg) no-repeat ;
     background-attachment: fixed;
     background-size: cover;
   }
 
   main {
     position: relative;
-    margin-top: 5rem;
+    margin-top: 10rem;
     border-radius: 20px 20px 0px 0px;
     width: 100vw;
-    height: 75vh;
-    background-color: rgba(255, 255, 255, 0.534);
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.884);
   }
 
   h1 {
@@ -53,13 +54,13 @@
 
   #profile__img {
     position: absolute;
-    left: 8rem;
+    left: 9rem;
     top: -3rem;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     scale: 1.5rem;
-    border: 2px solid rgba(255, 255, 255, 0.466);
+    border: 2px solid rgba(255, 255, 255, 0.74);
   }
 
   #profile__img:hover {
