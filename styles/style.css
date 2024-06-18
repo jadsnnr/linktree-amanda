@@ -3,6 +3,9 @@
     --bg__txtcolor: #b4b7bfc6;
     --bg__txtcolor_hover: #9c9c9caa;
   }
+  body, html {
+    overflow: hidden;
+  }
 
   * {
     padding: 0;
