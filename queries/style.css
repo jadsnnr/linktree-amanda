@@ -14,3 +14,30 @@
     max-width: 50vw;
   }
 }
+
+@media only screen and (min-height: 600px) {
+  main {
+    margin-top: 8rem;
+  }
+  h1 {
+    margin-top: 7rem;
+  }
+
+  #profile__img {
+    flex-flow: row;
+    right: 8rem;
+    bottom: 20rem;
+    top: -15rem;
+  }
+  .list__item {
+    padding: 0.rem;
+    margin-top: 1.5rem;
+    display: block;
+    border: 1px solid rgba(63, 61, 61, 0.062);
+    cursor: pointer;
+  }
+  .line__icon {
+    margin-top: 1.5rem;
+
+  }
+}
