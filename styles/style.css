@@ -160,7 +160,11 @@
   }
 
   .slider-container {
-    width: 50%;
+    width: 60vw;
+    
+  }
+  .project__img{
+    width: 100vw;
   }
 
   dialog {
