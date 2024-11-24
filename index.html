@@ -44,17 +44,17 @@
     <div class="container">
       <main>
         <img
-          src="styles/img/profile-img.jpeg"
+          src="styles/img/profile-img.jpg"
           alt="Profile Image"
           id="profile__img"
         />
-        <h1>Eu sou Amanda</h1>
+        <h1>Olá!</h1>
         <h4>Conheça um pouco mais do meu trabalho</h4>
 
         <div class="content">
           <ul>
             <li class="list__item"><a>Quem sou eu?</a></li>
-            <li class="list__item"><a>Veja alguns projetos</a></li>
+            <li class="list__item"><a href="#">Meu Site</a></li>
             <li class="list__item"><a>Onde me encontrar</a></li>
           </ul>
 
@@ -74,58 +74,7 @@
             </p>
           </dialog>
 
-          <!-- Modal: Carousel -->
-          <dialog class="carousel">
-            <a
-              href="https://jadsnnr.github.io/linktree-amanda/"
-              class="home__button"
-            >
-              <ion-icon name="arrow-undo"></ion-icon>
-            </a>
-            <div class="swiffy-slider">
-              <ul class="slider-container">
-                <li>
-                  <img
-                    src="styles/img/externa001.jpg"
-                    class="project__img"
-                    alt="Project Image"
-                    style="max-width: 60vw; height: 25vh; margin-top: 50px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="styles/img/front001.jpg"
-                    class="project__img"
-                    alt="Project Image"
-                    style="max-width: 60vw; height: 25vh; margin-top: 50px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="styles/img/front002.jpg"
-                    class="project__img"
-                    alt="Project Image"
-                    style="max-width: 60vw; height: 25vh; margin-top: 50px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="styles/img/front003.jpg"
-                    class="project__img"
-                    alt="Project Image"
-                    style="max-width: 60vw; height: 25vh; margin-top: 50px"
-                  />
-                </li>
-              </ul>
-              <button type="button" class="slider-nav"></button>
-              <button type="button" class="slider-nav slider-nav-next"></button>
-              <div class="slider-indicators">
-                <button class="active"></button>
-                <button></button>
-                <button></button>
-              </div>
-            </div>
-          </dialog>
+          
 
           <!-- Modal: Location -->
           <dialog class="location">
@@ -146,16 +95,11 @@
           </dialog>
         </div>
 
-        <!-- Social Media Icons -->
+        <!-- Icones de medias sociais -->
         <ul class="line__icon">
           <li>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/arq.amandafariaa/?igsh=amkwOG16ZWhjcjVz#" target="_blank">
               <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
           <li>
@@ -180,7 +124,7 @@
       document.querySelectorAll(".list__item").forEach((action, index) => {
         action.addEventListener("click", () => {
           const modals = document.querySelectorAll(".modal");
-          const carousel = document.querySelector(".carousel");
+          
           const location_app = document.querySelector(".location");
           if (index < modals.length) {
             modals[index].showModal();
