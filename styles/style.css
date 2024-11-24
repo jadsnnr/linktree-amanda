@@ -13,7 +13,6 @@
     box-sizing: border-box;
     text-align: center;
     list-style-type: none;
-    color: var(--txt__color);
     font-family: "Open Sans", sans-serif;
   }
 
@@ -24,7 +23,7 @@
     line-height: 1rem;
     align-items: center;
     padding: 0;
-    background: #F2D1B3;
+    background-image: url(img/bg-img02.jpg);
   }
 
   main {
@@ -33,7 +32,7 @@
     border-radius: 20px 20px 0px 0px;
     width: 100vw;
     height: 85vh;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
   }
 
   h1 {
@@ -55,16 +54,16 @@
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
-    border: 5px solid rgb(255, 255, 255);
   }
 
   ul {
     width: 70vw;
+    
   }
 
   a {
     text-decoration: none;
-    color: var(--txt__color);
+    color: black;
   }
   .line__icon {
     display: inline-flex;
@@ -73,12 +72,15 @@
   }
 
   .list__item {
-    box-shadow: 3px 2px 8px rgba(159, 159, 159, 0.503);
+    box-shadow: 3px 5px 1px 1px rgb(0, 0, 0);
     padding: 0.8rem;
     margin-top: 2em;
     display: block;
-    border: 1px solid rgba(63, 61, 61, 0.062);
+    border: 1px solid rgb(63, 61, 61);
+    border-radius: 25px;
     cursor: pointer;
+    background-color: white;
+
   }
 
   .list__item:active {
