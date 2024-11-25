@@ -5,6 +5,8 @@
   }
   body, html {
     overflow: hidden;
+    background: url(img/bg-img02.jpg) no-repeat top center;
+    background-size: cover;
   }
 
   * {
@@ -16,23 +18,14 @@
     font-family: "Open Sans", sans-serif;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    line-height: 1rem;
-    align-items: center;
-    padding: 0;
-    background-image: url(img/bg-img02.jpg);
-  }
-
   main {
+    line-height: 1rem;
     position: relative;
     margin-top: 8rem;
     border-radius: 20px 20px 0px 0px;
     width: 100vw;
     height: 85vh;
-    background-color: transparent;
+    background-color: white;
   }
 
   h1 {
@@ -72,24 +65,23 @@
   }
 
   .list__item {
-    box-shadow: 3px 5px 1px 1px rgb(0, 0, 0);
     padding: 0.8rem;
     margin-top: 2em;
     display: block;
-    border: 1px solid rgb(63, 61, 61);
-    border-radius: 25px;
     cursor: pointer;
-    background-color: white;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(63, 61, 61);
 
+  }
+
+  .list__item:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
   }
 
   .list__item:active {
     background: rgba(170, 170, 170, 0.454);
     transform: scale(1.3);
-  }
-
-  .slider-container{
-    width: 60vw;
   }
 
   dialog {
