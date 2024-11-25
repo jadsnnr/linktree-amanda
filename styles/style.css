@@ -127,6 +127,7 @@
     box-shadow: 3px 2px 15px 1px gray;
     width: 60vw;
     max-width: 500px;
+    max-height: 800px;
   }
 
   h1 {
