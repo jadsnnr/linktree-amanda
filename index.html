@@ -14,18 +14,6 @@
       rel="stylesheet"
     />
 
-    <!-- Swiffy Slider -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-
     <!-- Ionicons -->
     <script
       type="module"
@@ -41,7 +29,6 @@
     <link rel="stylesheet" href="queries/style.css" />
   </head>
   <body>
-    <div class="container">
       <main>
         <img
           src="styles/img/profile-img.jpg"
@@ -117,7 +104,6 @@
           </li>
         </ul>
       </main>
-    </div>
 
     <!-- Custom JavaScript -->
     <script>
@@ -128,8 +114,6 @@
           const location_app = document.querySelector(".location");
           if (index < modals.length) {
             modals[index].showModal();
-          } else if (index === modals.length) {
-            carousel.showModal();
           } else if (index === modals.length + 1) {
             location_app.showModal();
           }
