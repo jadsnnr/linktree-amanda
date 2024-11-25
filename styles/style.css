@@ -121,7 +121,7 @@
     height: 100vh;
   }
   main {
-    margin: 5rem auto;
+    margin: auto;
     border: 1px solid #c4b2a4;
     border-radius: 30px;
     box-shadow: 3px 2px 15px 1px gray;
