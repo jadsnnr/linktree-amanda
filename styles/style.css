@@ -31,8 +31,7 @@
   main {
     line-height: 1rem;
     position: relative;
-    margin-top: 8rem;
-    border-radius: 20px 20px 0px 0px;
+    margin-top: 14rem;
     width: 100vw;
     height: 85vh;
     background-color: white;
@@ -115,7 +114,7 @@
   }
 
 /* Media Queries para telas grandes */
-@media (min-width: 900px) {
+@media (min-width: 500px) {
 
   .container{
     height: 100vh;
@@ -125,26 +124,26 @@
     border: 1px solid #c4b2a4;
     border-radius: 30px;
     box-shadow: 3px 2px 15px 1px gray;
-    width: 60vw;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 800px;
+    min-height: fit-content;
   }
 
   h1 {
-    font-size: 2.5em;
-    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
   }
 
   h4 {
-    font-size: 1.5em;
-    margin-top: 1.5rem;
+    font-size: 1em;
+    margin-top: 1rem;
   }
 
   #profile__img {
     position:static;
-    width: 15rem;
-    height: 15rem;
-    margin-top: 1rem;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
   }
 
   ul {
@@ -152,12 +151,12 @@
   }
 
   .line__icon {
-    font-size: xx-large;
+    font-size: x-large;
   }
 
   .list__item {
     padding: 1rem;
-    margin-top: 2.5em;
+    margin-top: 2rem;
     font-size: 1.2em;
   }
 
