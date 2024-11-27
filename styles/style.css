@@ -118,7 +118,7 @@
 @media (min-width: 900px) {
 
   .container{
-    height: 80vh;
+    height: 100vh;
   }
   main {
     margin: auto;
