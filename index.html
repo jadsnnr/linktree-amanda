@@ -42,7 +42,10 @@
         <!-- Icones de medias sociais -->
         <ul class="line__icon">
           <li>
-            <a href="https://www.instagram.com/arq.amandafariaa/?igsh=amkwOG16ZWhjcjVz#" target="_blank">
+            <a
+              href="https://www.instagram.com/arq.amandafariaa/?igsh=amkwOG16ZWhjcjVz#"
+              target="_blank"
+            >
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -78,13 +81,17 @@
             </a>
             <h3 style="margin-bottom: 1rem">Quem sou Eu?</h3>
             <p>
-              Sou Amanda Faria, arquiteta paisagista por paixão e profissão.
-              Trabalho para criar espaços ao ar livre que unem beleza,
-              funcionalidade e harmonia com a natureza. #NaturezaNoDesign
+              Sou arquiteta e urbanista formada 2022, apaixonada por transformar
+              espaços em lugares que contam histórias. Trabalho com projetos
+              residenciais, comerciais, de interiores e paisagismo, sempre
+              buscando aliar funcionalidade, estética e as necessidades de cada
+              cliente. Acredito que a arquitetura tem o poder de impactar
+              positivamente nossas vidas, criando ambientes acolhedores,
+              práticos e cheios de personalidade. Meu objetivo é trazer soluções
+              criativas e personalizadas, respeitando os sonhos e o estilo de
+              vida dos meus clientes.
             </p>
           </dialog>
-
-          
 
           <!-- Modal: Location -->
           <dialog class="location">
@@ -104,8 +111,6 @@
             ></iframe>
           </dialog>
         </div>
-
-        
       </main>
     </div>
 
@@ -114,7 +119,7 @@
       document.querySelectorAll(".list__item").forEach((action, index) => {
         action.addEventListener("click", () => {
           const modals = document.querySelectorAll(".modal");
-          
+
           const location_app = document.querySelector(".location");
           if (index < modals.length) {
             modals[index].showModal();
