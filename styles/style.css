@@ -47,6 +47,10 @@
     margin-top: 1rem;
   }
 
+  p{
+    line-height: 1.1rem;
+  }
+
   #profile__img {
     margin: auto;
     position: absolute;
