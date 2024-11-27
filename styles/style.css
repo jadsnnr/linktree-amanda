@@ -114,7 +114,7 @@
   }
 
 /* Media Queries para telas grandes */
-@media (min-width: 500px) {
+@media (min-width: 600px) {
 
   .container{
     height: 100vh;
@@ -152,11 +152,9 @@
   .line__icon {
     font-size: x-large;
   }
-
-  .list__item {
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 1.2em;
+  a :hover{
+    transform: scale(1.1);
+    transition: 0.2s;
   }
 
   .list__item:hover{
