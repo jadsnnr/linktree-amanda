@@ -126,7 +126,6 @@
     box-shadow: 3px 2px 15px 1px gray;
     max-width: 400px;
     max-height: 800px;
-    min-height: fit-content;
   }
 
   h1 {
