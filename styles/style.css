@@ -31,7 +31,7 @@
   main {
     line-height: 1rem;
     position: relative;
-    margin-top: 14rem;
+    margin-top: 8rem;
     width: 100vw;
     height: 85vh;
     background-color: white;
@@ -174,11 +174,6 @@
     width: 100vw;
   }
 
-  dialog {
-    width: 60%;
-    padding: 30px;
-  }
-
   .home__button {
     top: -5px;
     left: 5px;
@@ -190,10 +185,13 @@
 
   dialog {
     width: 40vw;
-    height: 30rem;
     border: none;
     box-shadow: 1px 5px 10px black;
     border-radius: 5px;
     padding: 25px;
+  }
+  .location{
+    width: 40vw;
+    height: 30rem;
   }
 }
