@@ -16,6 +16,7 @@
     text-align: center;
     list-style-type: none;
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
   }
 
   .container {
