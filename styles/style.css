@@ -118,18 +118,20 @@ dialog::backdrop {
 /* Media Queries para telas grandes */
 @media (min-width: 880px) {
   body{
-    padding-bottom: 6rem;
+    overflow: hidden;
   }
-  .container {
-    height: 100vh;
+  .container{
+    height: 90vh;
   }
+  
   main {
     margin: auto;
     border: 1px solid #c4b2a4;
     border-radius: 30px;
     box-shadow: 3px 2px 15px 1px gray;
     max-width: 25rem;
-    max-height: 50rem;
+    max-height: 60rem;
+    line-height: 0.6rem;
   }
 
   h1 {
@@ -161,6 +163,9 @@ dialog::backdrop {
     transition: 0.2s;
   }
 
+  .list__item{
+    font-size: medium;
+  }
   .list__item:hover {
     transform: scale(1.1);
     transition: 0.2s;
@@ -204,6 +209,8 @@ dialog::backdrop {
   .container {
     justify-content: space-around;
     padding-top: 6rem;
+    height: 40rem;
+
   }
 
   main {
