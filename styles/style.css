@@ -7,6 +7,7 @@
     overflow: hidden;
     background: url(img/bg-img02.jpg) no-repeat top right;
     background-size: cover;
+    overflow:auto; 
   }
 
   * {
