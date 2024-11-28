@@ -117,6 +117,9 @@ dialog::backdrop {
 
 /* Media Queries para telas grandes */
 @media (min-width: 880px) {
+  body{
+    padding-bottom: 6rem;
+  }
   .container {
     height: 100vh;
   }
@@ -194,14 +197,17 @@ dialog::backdrop {
 
 /*Queries para telas na horizontal*/
 @media (orientation: landscape) {
+  body{
+    padding-bottom: 6rem;
+  }
 
   .container {
     justify-content: space-around;
-    padding-top: 8rem;
+    padding-top: 6rem;
   }
 
   main {
-    height: 100%; /* Ajustar a altura para landscape */
+    height: 100%;
     width: 25rem;
     margin: auto;
     border: 2px solid #ccc;
