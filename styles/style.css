@@ -121,7 +121,7 @@ dialog::backdrop {
     overflow: hidden;
   }
   .container{
-    height: 90vh;
+    min-height: 87vh;
   }
   
   main {
@@ -130,7 +130,6 @@ dialog::backdrop {
     border-radius: 30px;
     box-shadow: 3px 2px 15px 1px gray;
     max-width: 25rem;
-    max-height: 60rem;
     line-height: 0.6rem;
   }
 
